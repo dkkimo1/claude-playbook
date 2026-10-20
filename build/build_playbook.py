@@ -7,7 +7,7 @@ OUT = sys.argv[1]
 
 STR = {
  "da": {
-  "steps": ["Ejer og opgaver", "Plan og data", "Arbejdsgange", "Oplæring", "Agent på hjemmesiden", "Måling"],
+  "steps": ["Ejer og opgaver", "Abonnement og data", "Arbejdsgange", "Oplæring", "Agent på hjemmesiden", "Måling"],
   "weeks": ["Uge 1", "Uge 1", "Uge 2 til 4", "Uge 2 til 4", "Når resten kører", "Uge 6"],
   "hero_title": "Fra første login til målbar effekt",
   "inputs": ["Instruktioner", "Dokumenter", "Godt eksempel"],

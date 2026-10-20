@@ -6,8 +6,8 @@ BASE = "https://dkkimo1.github.io/claude-playbook"
 DATE = "2026-10-20"
 
 SRC = [
- ("https://support.claude.com/en/articles/9266767-what-is-the-team-plan", {"da": "Anthropic: Hvad er Team-planen?", "en": "Anthropic: What is the Team plan?"}),
- ("https://support.claude.com/en/articles/9797531-what-is-the-enterprise-plan", {"da": "Anthropic: Hvad er Enterprise-planen?", "en": "Anthropic: What is the Enterprise plan?"}),
+ ("https://support.claude.com/en/articles/9266767-what-is-the-team-plan", {"da": "Anthropic: Hvad er Team-abonnementet?", "en": "Anthropic: What is the Team plan?"}),
+ ("https://support.claude.com/en/articles/9797531-what-is-the-enterprise-plan", {"da": "Anthropic: Hvad er Enterprise-abonnementet?", "en": "Anthropic: What is the Enterprise plan?"}),
  ("https://privacy.claude.com/en/articles/7996862-how-do-i-view-and-sign-your-data-processing-addendum-dpa", {"da": "Anthropic: Databehandleraftalen (DPA)", "en": "Anthropic: The Data Processing Addendum (DPA)"}),
  ("https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training", {"da": "Anthropic: Bruges mine data til træning af modeller?", "en": "Anthropic: Is my data used for model training?"}),
  ("https://support.claude.com/en/articles/9517075-what-are-projects", {"da": "Anthropic: Hvad er projekter?", "en": "Anthropic: What are projects?"}),
@@ -19,7 +19,7 @@ L = {}
 L["da"] = dict(
  lang="da", locale="da_DK", path="", css="style.css", img="img/", sfx="",
  title="AI-implementering med Claude: en åben playbook for virksomheder",
- desc="Sådan får en virksomhed på 5 til 80 ansatte Claude i fast drift: valg af plan, data og GDPR, de første arbejdsgange, oplæring og måling. En gratis playbook i seks trin.",
+ desc="Sådan får en virksomhed på 5 til 80 ansatte Claude i fast drift: valg af abonnement, data og GDPR, de første arbejdsgange, oplæring og måling. En gratis playbook i seks trin.",
  og_title="AI-implementering med Claude: en åben playbook",
  og_desc="Seks trin fra første login til målbar effekt. Skrevet til virksomheder på 5 til 80 ansatte.",
  brand="Claude-playbook", nav='<a href="./" aria-current="page">Dansk</a> <a href="en/" hreflang="en">English</a>',
@@ -35,8 +35,8 @@ L["da"] = dict(
   <p>Udpeg én person, der har ansvaret for resultatet. Ikke en komité. Vælg derefter tre opgaver, der tager meget tid, gentager sig hver uge, og hvor et forkert svar bliver opdaget, før det gør skade. Gode kandidater er mødereferater, første udkast til tilbud, opsummering af kundehenvendelser og oprydning i CRM-data.</p>
   <p>Dårlige første kandidater er opgaver, hvor en fejl går direkte til en kunde uden kontrol, eller hvor ingen kan sige, hvad et godt resultat er.</p>
 
-  <h2>Trin 2: Hvilken Claude-plan, og hvordan holder I data sikre?</h2>
-  <p>Vælg en virksomhedsplan, ikke personlige konti. Claude Team giver fælles administration, single sign-on (SSO) og en databehandleraftale. Enterprise kommer på tale, når I har brug for automatisk oprettelse og lukning af brugere (SCIM), auditlogs eller særlige kontraktvilkår.</p>
+  <h2>Trin 2: Hvilket Claude-abonnement, og hvordan holder I data sikre?</h2>
+  <p>Vælg et virksomhedsabonnement, ikke personlige konti. Claude Team giver fælles administration, single sign-on (SSO) og en databehandleraftale. Enterprise kommer på tale, når I har brug for automatisk oprettelse og lukning af brugere (SCIM), auditlogs eller særlige kontraktvilkår.</p>
   <p>Skriv en kort datapolitik på én side, før nogen går i gang. Den skal svare på tre spørgsmål:</p>
   <ul>
     <li>Hvilke data må gerne deles med Claude, for eksempel interne noter og offentligt materiale?</li>
@@ -51,7 +51,7 @@ L["da"] = dict(
     <img src="img/steps.jpg" width="1200" height="675" loading="lazy" alt="Diagram over en arbejdsgang i Claude: instruktioner, dokumenter og et godt eksempel går ind, et udkast kommer ud, og et menneske kontrollerer det">
     <figcaption>En arbejdsgang har tre input og altid et menneske i sidste led.</figcaption>
   </figure>
-  <p>Når en arbejdsgang skal hente data fra CRM, mail eller kalender, kobles Claude på via connectors (integrationer). På Team og Enterprise er det en ejer af organisationen, der slår dem til, og ejeren kan begrænse en connector til kun at læse. Start med læseadgang. Giv først skriveadgang, når arbejdsgangen har kørt fejlfrit i nogle uger.</p>
+  <p>Når en arbejdsgang skal hente data fra CRM, mail eller kalender, kobles Claude på via connectors (integrationer). På Team og Enterprise er det en administrator med rollen Owner, der slår dem til, og som kan begrænse en connector til kun at læse. Start med læseadgang. Giv først skriveadgang, når arbejdsgangen har kørt fejlfrit i nogle uger.</p>
 
   <h2>Trin 4: Hvordan lærer medarbejderne at bruge Claude i hverdagen?</h2>
   <p>Oplæring virker, når den foregår på medarbejdernes egne opgaver. En workshop med generiske eksempler er glemt inden fredag. En workshop, hvor hver deltager går derfra med sin egen færdige arbejdsgang, er i brug allerede mandag.</p>
@@ -76,9 +76,9 @@ L["da"] = dict(
   ("Hvor lang tid tager en AI-implementering med Claude?",
    "Opsætning og oplæring tager få dage. Det, der tager tid, er at vælge de rigtige opgaver og teste dem på rigtige data. Mål effekten i uge 6, så I har tal at tage stilling til."),
   ("Må I bruge Claude under GDPR?",
-   "Ja, når opsætningen er i orden, men ansvaret ligger hos jer som dataansvarlig. Brug en virksomhedsplan, hvor Anthropics databehandleraftale indgår i de kommercielle vilkår. På virksomhedsplaner bruger Anthropic som standard ikke jeres data til at træne sine modeller. Feedback, som en bruger giver med tommel op eller ned, kan dog blive brugt, og en ejer kan slå den mulighed fra. Beslut skriftligt, hvilke data der må deles, og fjern persondata, som opgaven ikke kræver."),
-  ("Hvilken Claude-plan skal I vælge?",
-   "Til et team er Claude Team det naturlige udgangspunkt. Planen har fælles administration, single sign-on (SSO) og en databehandleraftale. Enterprise giver mening, når I skal bruge automatisk oprettelse og lukning af brugere (SCIM), auditlogs eller særlige kontraktvilkår. Gratis- og personlige planer hører ikke hjemme i virksomhedsdrift."),
+   "Ja, når opsætningen er i orden, men ansvaret ligger hos jer som dataansvarlig. Brug et virksomhedsabonnement, hvor Anthropics databehandleraftale indgår i de kommercielle vilkår. På virksomhedsabonnementer bruger Anthropic som standard ikke jeres data til at træne sine modeller. Feedback, som en bruger giver med tommel op eller ned, kan dog blive brugt, og en administrator med rollen Owner kan slå den mulighed fra. Beslut skriftligt, hvilke data der må deles, og fjern persondata, som opgaven ikke kræver."),
+  ("Hvilket Claude-abonnement skal I vælge?",
+   "Til et team er Claude Team det naturlige udgangspunkt. Abonnementet har fælles administration, single sign-on (SSO) og en databehandleraftale. Enterprise giver mening, når I skal bruge automatisk oprettelse og lukning af brugere (SCIM), auditlogs eller særlige kontraktvilkår. Gratis- og personlige abonnementer hører ikke hjemme i virksomhedsdrift."),
   ("Hvordan måler I, om AI-implementeringen virker?",
    "Mål, hvor lang tid opgaven tager før og efter, hvor mange fejl kontrollen fanger, og hvor mange i teamet der bruger arbejdsgangen hver uge. Mål tallene, før I starter, ellers er der intet at sammenligne med."),
  ],
@@ -122,7 +122,7 @@ L["en"] = dict(
     <img src="../img/steps-en.jpg" width="1200" height="675" loading="lazy" alt="Diagram of a Claude workflow: instructions, documents and a good example go in, a draft comes out, and a person reviews it">
     <figcaption>A workflow has three inputs and always a person at the end.</figcaption>
   </figure>
-  <p>When a workflow needs data from the CRM, email or calendar, Claude uses connectors. On Team and Enterprise, an owner of the organisation turns them on, and can limit a connector to reading only. Start with read access. Allow writing only after the workflow has run cleanly for a few weeks.</p>
+  <p>When a workflow needs data from the CRM, email or calendar, Claude uses connectors. On Team and Enterprise, an admin with the Owner role turns them on, and can limit a connector to reading only. Start with read access. Allow writing only after the workflow has run cleanly for a few weeks.</p>
 
   <h2>Step 4: How do employees learn to use Claude every day?</h2>
   <p>Training works when it happens on people's own tasks. A workshop with generic examples is forgotten by Friday. A workshop where each person leaves with their own finished workflow is in use on Monday.</p>
@@ -147,7 +147,7 @@ L["en"] = dict(
   ("How long does a Claude implementation take?",
    "Setup and training take a few days. What takes time is picking the right tasks and testing them on real data. Measure the effect in week 6, so you have numbers to base a decision on."),
   ("Can you use Claude under GDPR?",
-   "Yes, if it's set up properly, but the responsibility stays with you as data controller. Use a business plan, where Anthropic's data processing agreement is part of the commercial terms. On business plans, Anthropic doesn't use your data to train its models by default. Feedback a user gives with thumbs up or down can be used, though, and an owner can switch that option off. Decide in writing which data may be shared, and remove personal data the task doesn't need."),
+   "Yes, if it's set up properly, but the responsibility stays with you as data controller. Use a business plan, where Anthropic's data processing agreement is part of the commercial terms. On business plans, Anthropic doesn't use your data to train its models by default. Feedback a user gives with thumbs up or down can be used, though, and an admin with the Owner role can switch that option off. Decide in writing which data may be shared, and remove personal data the task doesn't need."),
   ("Which Claude plan should a company choose?",
    "For a team, Claude Team is the natural start. It has shared admin, single sign-on (SSO) and a data processing agreement. Enterprise makes sense when you need automated user provisioning (SCIM), audit logs or specific contract terms. Free and personal plans don't belong in company operations."),
   ("How do you measure whether it works?",

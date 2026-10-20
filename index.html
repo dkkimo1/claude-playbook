@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI-implementering med Claude: en åben playbook for virksomheder</title>
-<meta name="description" content="Sådan får en virksomhed på 5 til 80 ansatte Claude i fast drift: valg af plan, data og GDPR, de første arbejdsgange, oplæring og måling. En gratis playbook i seks trin.">
+<meta name="description" content="Sådan får en virksomhed på 5 til 80 ansatte Claude i fast drift: valg af abonnement, data og GDPR, de første arbejdsgange, oplæring og måling. En gratis playbook i seks trin.">
 <link rel="canonical" href="https://dkkimo1.github.io/claude-playbook/">
 <link rel="alternate" hreflang="da" href="https://dkkimo1.github.io/claude-playbook/">
 <link rel="alternate" hreflang="en" href="https://dkkimo1.github.io/claude-playbook/en/">
@@ -58,15 +58,15 @@
      "name": "Må I bruge Claude under GDPR?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Ja, når opsætningen er i orden, men ansvaret ligger hos jer som dataansvarlig. Brug en virksomhedsplan, hvor Anthropics databehandleraftale indgår i de kommercielle vilkår. På virksomhedsplaner bruger Anthropic som standard ikke jeres data til at træne sine modeller. Feedback, som en bruger giver med tommel op eller ned, kan dog blive brugt, og en ejer kan slå den mulighed fra. Beslut skriftligt, hvilke data der må deles, og fjern persondata, som opgaven ikke kræver."
+      "text": "Ja, når opsætningen er i orden, men ansvaret ligger hos jer som dataansvarlig. Brug et virksomhedsabonnement, hvor Anthropics databehandleraftale indgår i de kommercielle vilkår. På virksomhedsabonnementer bruger Anthropic som standard ikke jeres data til at træne sine modeller. Feedback, som en bruger giver med tommel op eller ned, kan dog blive brugt, og en administrator med rollen Owner kan slå den mulighed fra. Beslut skriftligt, hvilke data der må deles, og fjern persondata, som opgaven ikke kræver."
      }
     },
     {
      "@type": "Question",
-     "name": "Hvilken Claude-plan skal I vælge?",
+     "name": "Hvilket Claude-abonnement skal I vælge?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Til et team er Claude Team det naturlige udgangspunkt. Planen har fælles administration, single sign-on (SSO) og en databehandleraftale. Enterprise giver mening, når I skal bruge automatisk oprettelse og lukning af brugere (SCIM), auditlogs eller særlige kontraktvilkår. Gratis- og personlige planer hører ikke hjemme i virksomhedsdrift."
+      "text": "Til et team er Claude Team det naturlige udgangspunkt. Abonnementet har fælles administration, single sign-on (SSO) og en databehandleraftale. Enterprise giver mening, når I skal bruge automatisk oprettelse og lukning af brugere (SCIM), auditlogs eller særlige kontraktvilkår. Gratis- og personlige abonnementer hører ikke hjemme i virksomhedsdrift."
      }
     },
     {
@@ -107,8 +107,8 @@
   <p>Udpeg én person, der har ansvaret for resultatet. Ikke en komité. Vælg derefter tre opgaver, der tager meget tid, gentager sig hver uge, og hvor et forkert svar bliver opdaget, før det gør skade. Gode kandidater er mødereferater, første udkast til tilbud, opsummering af kundehenvendelser og oprydning i CRM-data.</p>
   <p>Dårlige første kandidater er opgaver, hvor en fejl går direkte til en kunde uden kontrol, eller hvor ingen kan sige, hvad et godt resultat er.</p>
 
-  <h2>Trin 2: Hvilken Claude-plan, og hvordan holder I data sikre?</h2>
-  <p>Vælg en virksomhedsplan, ikke personlige konti. Claude Team giver fælles administration, single sign-on (SSO) og en databehandleraftale. Enterprise kommer på tale, når I har brug for automatisk oprettelse og lukning af brugere (SCIM), auditlogs eller særlige kontraktvilkår.</p>
+  <h2>Trin 2: Hvilket Claude-abonnement, og hvordan holder I data sikre?</h2>
+  <p>Vælg et virksomhedsabonnement, ikke personlige konti. Claude Team giver fælles administration, single sign-on (SSO) og en databehandleraftale. Enterprise kommer på tale, når I har brug for automatisk oprettelse og lukning af brugere (SCIM), auditlogs eller særlige kontraktvilkår.</p>
   <p>Skriv en kort datapolitik på én side, før nogen går i gang. Den skal svare på tre spørgsmål:</p>
   <ul>
     <li>Hvilke data må gerne deles med Claude, for eksempel interne noter og offentligt materiale?</li>
@@ -123,7 +123,7 @@
     <img src="img/steps.jpg" width="1200" height="675" loading="lazy" alt="Diagram over en arbejdsgang i Claude: instruktioner, dokumenter og et godt eksempel går ind, et udkast kommer ud, og et menneske kontrollerer det">
     <figcaption>En arbejdsgang har tre input og altid et menneske i sidste led.</figcaption>
   </figure>
-  <p>Når en arbejdsgang skal hente data fra CRM, mail eller kalender, kobles Claude på via connectors (integrationer). På Team og Enterprise er det en ejer af organisationen, der slår dem til, og ejeren kan begrænse en connector til kun at læse. Start med læseadgang. Giv først skriveadgang, når arbejdsgangen har kørt fejlfrit i nogle uger.</p>
+  <p>Når en arbejdsgang skal hente data fra CRM, mail eller kalender, kobles Claude på via connectors (integrationer). På Team og Enterprise er det en administrator med rollen Owner, der slår dem til, og som kan begrænse en connector til kun at læse. Start med læseadgang. Giv først skriveadgang, når arbejdsgangen har kørt fejlfrit i nogle uger.</p>
 
   <h2>Trin 4: Hvordan lærer medarbejderne at bruge Claude i hverdagen?</h2>
   <p>Oplæring virker, når den foregår på medarbejdernes egne opgaver. En workshop med generiske eksempler er glemt inden fredag. En workshop, hvor hver deltager går derfra med sin egen færdige arbejdsgang, er i brug allerede mandag.</p>
@@ -147,16 +147,16 @@
   <h3>Hvor lang tid tager en AI-implementering med Claude?</h3>
   <p>Opsætning og oplæring tager få dage. Det, der tager tid, er at vælge de rigtige opgaver og teste dem på rigtige data. Mål effekten i uge 6, så I har tal at tage stilling til.</p>
   <h3>Må I bruge Claude under GDPR?</h3>
-  <p>Ja, når opsætningen er i orden, men ansvaret ligger hos jer som dataansvarlig. Brug en virksomhedsplan, hvor Anthropics databehandleraftale indgår i de kommercielle vilkår. På virksomhedsplaner bruger Anthropic som standard ikke jeres data til at træne sine modeller. Feedback, som en bruger giver med tommel op eller ned, kan dog blive brugt, og en ejer kan slå den mulighed fra. Beslut skriftligt, hvilke data der må deles, og fjern persondata, som opgaven ikke kræver.</p>
-  <h3>Hvilken Claude-plan skal I vælge?</h3>
-  <p>Til et team er Claude Team det naturlige udgangspunkt. Planen har fælles administration, single sign-on (SSO) og en databehandleraftale. Enterprise giver mening, når I skal bruge automatisk oprettelse og lukning af brugere (SCIM), auditlogs eller særlige kontraktvilkår. Gratis- og personlige planer hører ikke hjemme i virksomhedsdrift.</p>
+  <p>Ja, når opsætningen er i orden, men ansvaret ligger hos jer som dataansvarlig. Brug et virksomhedsabonnement, hvor Anthropics databehandleraftale indgår i de kommercielle vilkår. På virksomhedsabonnementer bruger Anthropic som standard ikke jeres data til at træne sine modeller. Feedback, som en bruger giver med tommel op eller ned, kan dog blive brugt, og en administrator med rollen Owner kan slå den mulighed fra. Beslut skriftligt, hvilke data der må deles, og fjern persondata, som opgaven ikke kræver.</p>
+  <h3>Hvilket Claude-abonnement skal I vælge?</h3>
+  <p>Til et team er Claude Team det naturlige udgangspunkt. Abonnementet har fælles administration, single sign-on (SSO) og en databehandleraftale. Enterprise giver mening, når I skal bruge automatisk oprettelse og lukning af brugere (SCIM), auditlogs eller særlige kontraktvilkår. Gratis- og personlige abonnementer hører ikke hjemme i virksomhedsdrift.</p>
   <h3>Hvordan måler I, om AI-implementeringen virker?</h3>
   <p>Mål, hvor lang tid opgaven tager før og efter, hvor mange fejl kontrollen fanger, og hvor mange i teamet der bruger arbejdsgangen hver uge. Mål tallene, før I starter, ellers er der intet at sammenligne med.</p>
 
   <h2>Kilder</h2>
   <ul class="sources">
-    <li><a href="https://support.claude.com/en/articles/9266767-what-is-the-team-plan">Anthropic: Hvad er Team-planen?</a></li>
-    <li><a href="https://support.claude.com/en/articles/9797531-what-is-the-enterprise-plan">Anthropic: Hvad er Enterprise-planen?</a></li>
+    <li><a href="https://support.claude.com/en/articles/9266767-what-is-the-team-plan">Anthropic: Hvad er Team-abonnementet?</a></li>
+    <li><a href="https://support.claude.com/en/articles/9797531-what-is-the-enterprise-plan">Anthropic: Hvad er Enterprise-abonnementet?</a></li>
     <li><a href="https://privacy.claude.com/en/articles/7996862-how-do-i-view-and-sign-your-data-processing-addendum-dpa">Anthropic: Databehandleraftalen (DPA)</a></li>
     <li><a href="https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training">Anthropic: Bruges mine data til træning af modeller?</a></li>
     <li><a href="https://support.claude.com/en/articles/9517075-what-are-projects">Anthropic: Hvad er projekter?</a></li>
