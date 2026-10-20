@@ -13,6 +13,7 @@ SRC = [
  ("https://support.claude.com/en/articles/9517075-what-are-projects", {"da": "Anthropic: Hvad er projekter?", "en": "Anthropic: What are projects?"}),
  ("https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities", {"da": "Anthropic: Connectors", "en": "Anthropic: Use connectors"}),
  ("https://eur-lex.europa.eu/eli/reg/2024/1689/oj", {"da": "EU's AI-forordning, forordning (EU) 2024/1689", "en": "EU AI Act, Regulation (EU) 2024/1689"}),
+ ("https://eur-lex.europa.eu/eli/reg/2026/1744/oj", {"da": "Ændring af AI-forordningen, forordning (EU) 2026/1744 (ny artikel 4 om AI-færdigheder)", "en": "Amendment to the AI Act, Regulation (EU) 2026/1744 (new Article 4 on AI literacy)"}),
 ]
 
 L = {}
